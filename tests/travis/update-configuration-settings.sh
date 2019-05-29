@@ -87,5 +87,6 @@ then
 fi
 
 echo "putenv( 'MW_INSTALL_PATH=$(pwd)' );" >> LocalSettings.php
+cat LocalSettings.php
 
 php maintenance/update.php --skip-external-dependencies --quick
